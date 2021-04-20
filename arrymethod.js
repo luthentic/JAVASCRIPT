@@ -49,3 +49,11 @@ const ppp = [1,2,3,4,5];
 const includesingle = ppp.includes(6);
 console.log(includesingle);
 
+// ---------------------------------------------SOCPE--------------------------------------------------------------- 
+//  Automatically Global
+// If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
+// This code example will declare a global variable carName, even if the value is assigned inside a function.
+
+//  Strict Mode
+// All modern browsers support running JavaScript in "Strict Mode".
+// You will learn more about how to use strict mode in a later chapter of this tutorial.
