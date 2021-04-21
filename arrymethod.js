@@ -49,6 +49,10 @@ const ppp = [1,2,3,4,5];
 const includesingle = ppp.includes(6);
 console.log(includesingle);
 
+
+// ---------------------------------------------This--------------------------------------------------------------- 
+
+
 // ---------------------------------------------SOCPE--------------------------------------------------------------- 
 //  Automatically Global
 // If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
@@ -57,3 +61,22 @@ console.log(includesingle);
 //  Strict Mode
 // All modern browsers support running JavaScript in "Strict Mode".
 // You will learn more about how to use strict mode in a later chapter of this tutorial.
+// 1. Global Scope
+// 2. Local Scope or Function Scope
+// 3. Block Scope   - let, const
+Nested Scope
+
+
+// Lexical Scope
+// function init() {
+//   var name = 'Mozilla'; // name is a local variable created by init
+//   function displayName() { // displayName() is the inner function, a closure
+//     alert(name); // use variable declared in the parent function
+//   }
+//   displayName();
+// }
+// init();
+
+closure is a function having access to the parent scope, even after the parent function has closed. 
+EC
+ECSTACK
