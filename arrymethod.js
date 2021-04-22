@@ -64,7 +64,19 @@ console.log(includesingle);
 // 1. Global Scope
 // 2. Local Scope or Function Scope
 // 3. Block Scope   - let, const
-Nested Scope
+
+//          Nested Scope
+// function run() {
+//   // "run" function scope
+//   const message = 'Run, Forrest, Run!';
+//   if (true) {
+//     // "if" code block scope
+//     const friend = 'Bubba';
+//     console.log(message); // 'Run, Forrest, Run!'
+//   }
+
+//   console.log(friend); // throws ReferenceError
+// }
 
 
 // Lexical Scope
@@ -77,6 +89,35 @@ Nested Scope
 // }
 // init();
 
-closure is a function having access to the parent scope, even after the parent function has closed. 
-EC
-ECSTACK
+// closure:  is a function having access to the parent scope, even after the parent function has closed. 
+// function outer() {
+//   var b = 10;
+//   var c = 100;
+//      function inner() {
+          
+//            var a = 20; 
+//            console.log("a= " + a + " b= " + b);
+//            a++;
+//            b++;
+//       }
+//      return inner;
+//   }
+//   var X = outer();  // outer() invoked the first time
+//   var Y = outer();  // outer() invoked the second time
+//   //end of outer() function executions
+//   X(); // X() invoked the first time
+//   X(); // X() invoked the second time
+//   X(); // X() invoked the third time
+//   Y(); // Y() invoked the first time
+
+
+// EC : execution Context by JS Engine
+// b();
+// console.log(a);
+// var a = "hi!";
+// function b() {
+//     console.log("calling function");
+// }
+// calling function
+// undefined
+
