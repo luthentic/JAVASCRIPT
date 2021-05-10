@@ -90,12 +90,27 @@ number.map( value =>{
 // The map() method does not change the original array.
 //map iteration
 
+let txt2 = "";
+for(let z in number){
+  txt2 = number[z];
+  console.log(txt2);
+};
+//for in iteration 
+//The JavaScript for/in statement loops through the properties of an Object
+//It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.
+
+let txt3 = "";
+for(let z1 of number){
+  console.log(z1);
+}
+//for of iteration
+
 const sum = number.reduceRight(myfunction, 23);
 function myfunction(total,value){
   return total + value;
 }
 console.log(sum);
-// reduceright iteration
+// reduceright 
 
 const every = number.every(value=>{
   return value > 10;
