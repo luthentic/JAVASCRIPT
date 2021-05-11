@@ -142,4 +142,25 @@ console.log(Math.max(1,2,3,4,5,6,7));
 console.log(Math.floor(Math.random() * 100) + 1);
 // Math
 
+// A RangeError is thrown if you use a number that is outside the range of legal values.
+// A ReferenceError is thrown if you use (reference) a variable that has not been declared
+// A SyntaxError is thrown if you try to evaluate code with a syntax error.
+// A TypeError is thrown if you use a value that is outside the range of expected types
+// A URIError is thrown if you use illegal characters in a URI function
+// error types
+
+//The JavaScript this keyword refers to the object it belongs to
+let person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(person.fullName());
+
+console.log(this);
+
+console.log(function adg(){return this;});
 
