@@ -253,3 +253,32 @@ function Person(first, last, age, eyecolor) {
 Person.prototype.name = function() {
   return this.firstName + " " + this.lastName;
 };//  prototype property allows you to add new properties and new methods to object constructors
+
+
+//Unlike functions, and other JavaScript declarations, class declarations are not hoisted.
+
+// When you pass a function as an argument, remember not to use parenthesis.
+// Right: myCalculator(5, 5, myDisplayer);
+
+async function hoho (){
+  let leePromise = new Promise((resolve, reject)=>{
+    let a =1;
+    if(a==10){
+      resolve(console.log("HOHOHOHO"));
+    }else{
+      resolve(console.log("ohohohoho"));
+    }
+  });
+}
+hoho();
+
+//The await keyword can only be used inside an async function.
+// async makes a function return a Promise
+// await makes a function wait for a Promise
+
+//The onload and onunload events can be used to deal with cookies.
+
+//The addEventListener() method allows you 
+//to add many events to the same element, without overwriting existing events:
+
+console.log(document.getElementById("id02").nodeName); 
