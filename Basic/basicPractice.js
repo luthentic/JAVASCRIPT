@@ -13,7 +13,7 @@ console.log(slice);
 
 const substr = str.substring(0,7);
 console.log(substr);
-// substr can't
+// substr can't have negative values
 
 const replace = str.replace("Please","LEE");
 console.log(replace);
@@ -282,3 +282,18 @@ hoho();
 //to add many events to the same element, without overwriting existing events:
 
 console.log(document.getElementById("id02").nodeName); 
+
+// HTMLCollection items can be accessed by their name, id, or index number.
+// NodeList items can only be accessed by their index number.
+
+//                           A node list is not an array!
+// You can loop through the node list and refer to its nodes like an array.
+// However, you cannot use Array Methods, like valueOf(), push(), pop(), or join() on a node list.
+
+console.log(navigator.appVersion); 
+console.log(navigator.platform);
+console.log(navigator.language);
+console.log(navigator.onLine);
+console.log("lee LEE lee LEE \nlee LEE lee");
+
+// cookie 
