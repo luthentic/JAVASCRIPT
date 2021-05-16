@@ -8,16 +8,22 @@
 </head>
 <body>
   <button id="button">GET NAME</button>
+  <hr>
+  <form method="GET" action="process.php">
+    <input type="text" name="name">
+    <input type="submit" value="submit">
+  </form>
 
   <script>
-    document.getElementById('button').addEventListener('click',getName);
-
+    document.getElementById('button').addEventListener('click', getName);
     function getName(){
       let xhr = new XMLHttpRequest();
       xhr.open('GET','process.php',true);
 
       xhr.onload = function(){
-        console.log(this.reponseText);
+        console.log('====================================');
+        console.log(this.responseText);
+        console.log('====================================');
       }
       xhr.send();
     }
