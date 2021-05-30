@@ -38,11 +38,24 @@
 	    	</ul>
 	    </div>
 	    <form id="add-book">
+				<input type="checkbox" id="hide">
+				<label for="hide">HIDE LEE</label>
 	    	<input type="text" placeholder="Add a book..." />
 	    	<button>Add</button>
 	    </form>
 
     </div>
+
+		<div id="tabbed-content">
+			<ul class="tabs">
+				<li data-target="#about" class="active">About</li>
+				<li data-target="#contact">Contact</li>
+			</ul>
+			<div class="pannel active" id="about">
+				<p>LEE ABOUT</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex adipisci totam, praesentium ipsa est odio magnam repudiandae architecto ratione quaerat ducimus tempora ad, perferendis ea nulla dolorem aperiam illum!</p>
+			</div>
+		</div>
     <script src="app.js"></script>
   </body>
 </html>

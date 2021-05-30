@@ -1,4 +1,5 @@
-let le = document.getElementsByTagName('li');
+document.addEventListener('DOMContentLoaded',e=>{
+  let le = document.getElementsByTagName('li');
 Array.from(le).forEach(function(item){
   console.log(item);
 })
@@ -19,7 +20,7 @@ let btn = document.querySelector('#book-list ul');
   btn.addEventListener('click',function(e){
     if(e.target.className == 'delete'){
       const a = e.target.parentNode;
-      a.parentNode.removeChild(a);
+      btn.removeChild(a);
     }
   })
 
@@ -27,7 +28,29 @@ const addForm = document.forms['add-book'];
 addForm.addEventListener('submit',function(e){
   e.preventDefault();
   const value = addForm.querySelector('input[type="text"]').value;
-  console.log(value);
+  
+  let li = document.createElement('li');
+  let bookName = document.createElement('span')
+  let deleteBtn = document.createElement('span')
+
+  bookName.append(value)
+  deleteBtn.textContent ='delete'
+
+  bookName.classList.add('name')
+  deleteBtn.classList.add('delete')
+
+  li.append(bookName)
+  li.append(deleteBtn)
+  btn.append(li)
+})
+
+const hideBox = document.querySelector('#hide')
+hideBox.addEventListener('change',e =>{
+  if(hideBox.checked){
+    btn.style.display = 'none'
+  }else{
+    btn.style.display = 'initial'
+  }
 })
 
 
@@ -36,3 +59,5 @@ addForm.addEventListener('submit',function(e){
 //   let q = e.target.parentElement;
 //   q.parentElement.removeChild(q);
 // })
+})
+
