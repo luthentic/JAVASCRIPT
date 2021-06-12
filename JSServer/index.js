@@ -13,8 +13,9 @@ const renderPosts = async () =>{
       <h2>${element.title}</h2>
       <p>${element.id}<small>ID</small></p> 
       <p>${element.body.slice(0, 200)}</p>
-      <a href='/detail.html'>read more...</a>
-    </div>`
+      <a href="/details.html?id=${element.id}">Read more</a>
+    </div>
+    `
   })
 
   container.innerHTML = template
