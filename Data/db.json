@@ -1,0 +1,27 @@
+{
+  "post":[
+    {
+      "id":1,
+      "title":"welcome to the LEE1 blog",
+      "body":"We’ll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you’re coming from a different programming language. We’ll also assume that you’re familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes."
+    },
+    {
+      "id":2,
+      "title":"welcome to the LEE2 blog",
+      "body":"We’ll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you’re coming from a different programming language. We’ll also assume that you’re familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes."
+    },
+    {
+      "id":3,
+      "title":"welcome to the LEE3 blog",
+      "body":"We’ll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you’re coming from a different programming language. We’ll also assume that you’re familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes."
+    }
+  ],
+  "polls":[
+    {
+      "id":1,
+      "question":"Do you prefer vue or react?",
+      "answerA":"React",
+      "answerB":"Vue"
+  }
+]
+}
