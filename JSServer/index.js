@@ -1,7 +1,7 @@
 const container = document.querySelector('.blogs')
 
 const renderPosts = async () =>{
-  let url = 'http://localhost:3000/post'
+  let url = 'http://localhost:3000/post?_sort=id&_order=desc'
 
   const res = await fetch(url)
   const posts = await res.json()
