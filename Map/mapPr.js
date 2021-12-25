@@ -40,3 +40,4 @@ const unique = new Set(people.map((item) => item.name));
 const uniqueArray = [`Array`, ...new Set(people.map((item) => item.name))];
 console.log(unique);
 console.log(uniqueArray);
+console.log();
