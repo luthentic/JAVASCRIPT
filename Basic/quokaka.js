@@ -42,13 +42,16 @@ console.log(unique);
 console.log(uniqueArray);
 
 const key = "LEE";
+let key1 = "LEE1";
 
 const obj = {
   'hello': 'guys',
+  [key1]: 'SeWooong',
 }
 
 obj[key] = "Sewoong";
 console.log(obj);
+
 
 
 
