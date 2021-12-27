@@ -20,3 +20,18 @@ class Model extends Car{
 
 let myCar = new Model("Ford",'Mustang');
 console.log(myCar);
+
+function Person(name){
+  this.name = name || "LEE";
+}
+
+Person.prototype.getName = function(){
+  return this.name;
+}
+
+function Me(name){}
+Me.prototype = new Person();
+
+let lee = new Me();
+
+console.log(lee.getName());
