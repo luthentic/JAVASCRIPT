@@ -26,3 +26,25 @@ for(let code in codes){
 codesArray.forEach((element)=>{
   console.log(element);
 });
+
+function User(name){
+  this.name = name;
+  this.isAdmin = false;
+}
+
+let user = new User("LEE");
+
+console.log(user.name);
+console.log(user.isAdmin);
+
+let user1 = new function(){
+  this.name = "John";
+  this.isAdmin = false;
+};
+
+let id1 = Symbol("id");
+let id2 = Symbol("id");
+
+console.log(id1.description);
+
+console.log(id1 === id2);
