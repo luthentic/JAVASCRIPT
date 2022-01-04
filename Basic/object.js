@@ -74,3 +74,33 @@ function multifly(multi, ...arg){
 
 let mulit = multifly(2, 15, 20, 30, 40);
 console.log(mulit);
+
+let key = "firstName";
+const entries = new Map([
+  ['1','a'],
+  ['2','b']
+]);
+let user1 = {
+  firstName: "Lee",
+  sirName: "LEE"
+};
+
+let user2 = null;
+
+console.log(user1?.[key]);
+console.log(user2?.key);
+
+console.log(Object.fromEntries(entries));
+
+let date = new Date;
+console.log(date.getHours());
+
+let json = JSON.stringify(user1);
+console.log(typeof json);
+console.log(json);
+
+// Function properties (methods).
+// Symbolic keys and values.
+// Properties that store undefined.
+let parse = JSON.parse(json);
+console.log(typeof parse);
