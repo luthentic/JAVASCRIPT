@@ -110,3 +110,15 @@ let a4 = [1, 2, 3];
 
 console.log(a1 === a2);
 console.log(a3 === a4);
+
+const lee = "sewoonglee";
+
+console.log(Array.from(lee));
+
+const items = Array.from({ length: 110 }, (_, index) => {
+  return index;
+});
+
+const divide = 10;
+const pages = Math.ceil(items.length / divide);
+console.log(pages);
