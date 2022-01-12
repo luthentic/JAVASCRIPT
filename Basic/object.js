@@ -122,3 +122,38 @@ const items = Array.from({ length: 110 }, (_, index) => {
 const divide = 10;
 const pages = Math.ceil(items.length / divide);
 console.log(pages);
+
+function Rabbit() {}
+Rabbit.prototype = {
+  jump: true,
+};
+
+let rabbit = new Rabbit();
+console.log(rabbit.constructor);
+
+let animal = {
+  eats: true,
+};
+
+function Rabbit1(name) {
+  this.name = name;
+}
+
+Rabbit1.prototype = animal;
+
+let rabbit1 = new Rabbit1("White Rabbit");
+
+console.log(rabbit1.eats);
+
+let arr = [1, 2, 3];
+
+console.log(arr.__proto__);
+console.log(arr.__proto__.__proto__);
+console.log(arr.__proto__.__proto__.__proto__);
+
+if (!String.prototype.repeat) {
+  String.prototype.repeat = (n) => {
+    new Array(n + 1).join(this);
+  };
+}
+console.log("La".repeat(3));
