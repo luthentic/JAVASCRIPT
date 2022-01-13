@@ -157,3 +157,16 @@ if (!String.prototype.repeat) {
   };
 }
 console.log("La".repeat(3));
+
+let animal = {
+  eats: 5,
+};
+
+let rabbit = Object.create(animal);
+
+console.log(rabbit.eats);
+console.log(Object.getPrototypeOf(rabbit));
+const des = Object.getOwnPropertyDescriptors(rabbit);
+console.log(des.eats);
+
+console.log(rabbit);
