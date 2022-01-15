@@ -170,3 +170,15 @@ const des = Object.getOwnPropertyDescriptors(rabbit);
 console.log(des.eats);
 
 console.log(rabbit);
+
+function f(phrase) {
+  return class {
+    sayHi() {
+      console.log(phrase);
+    }
+  };
+}
+
+class User extends f("Hello") {}
+
+new User().sayHi();
